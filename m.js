@@ -12,6 +12,8 @@ const operatorId = AccountId.fromString("0.0.XXX");
 const operatorKey = PrivateKey.fromString("YOUR-KEY");
 
 const client = Client.forTestnet().setOperator(operatorId, operatorKey);
+//const client = Client.forMainnet().setOperator(operatorId, operatorKey); // contract Execution fails at createFungible(...)
+
 
 const main = async () => {
 
